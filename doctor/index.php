@@ -64,7 +64,7 @@
             border: 1px solid #e0e0e0;
         }
 
-        /* Responsive Table for Small Screens */
+
         .table-responsive {
             overflow-x: auto;
         }
@@ -88,7 +88,7 @@
     $userid = $userfetch["docid"];
     $username = $userfetch["docname"];
 
-    // Queries for counts
+
     $patientrow = $database->query("SELECT * FROM patient");
     $doctorrow = $database->query("SELECT * FROM doctor");
     $appointmentrow = $database->query("SELECT * FROM appointment WHERE appodate >= CURDATE()");
@@ -167,7 +167,7 @@
     </div>
 
     <script src="script.js"></script>
-    <!-- Bootstrap JS CDN -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
