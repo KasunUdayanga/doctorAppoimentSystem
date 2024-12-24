@@ -16,9 +16,11 @@
 <body>
     <?php
 
-
+    //A session is started to track user information across different pages
     session_start();
 
+
+    //session variables are initially set to empty strings.
     $_SESSION["user"]="";
     $_SESSION["usertype"]="";
     
@@ -26,21 +28,25 @@
     date_default_timezone_set('Asia/Kolkata');
     $date = date('Y-m-d');
 
-    $_SESSION["date"]=$date;
+    $_SESSION["date"]=$date;//The current date is stored in the session
     
 
     //import database
+    //The script includes an external file that establishes a connection to the database.
     include("connection.php");
 
     
 
 
-
+    //The form is processed when submitted
     if($_POST){
 
+        //the email and password are extracted from the form
         $email=$_POST['useremail'];
         $password=$_POST['userpassword'];
-        
+
+
+        //A default error message placeholder ($error) is set to an empty label.
         $error='<label for="promter" class="form-label"></label>';
 
         $result= $database->query("select * from webuser where email='$email'");

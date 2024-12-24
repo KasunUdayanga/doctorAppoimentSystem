@@ -15,24 +15,26 @@
 <?php
 
 
-
+//A session is started to track user data across different pages.
 session_start();
 
+
+// initially set to empty strings to reset any previous session data.
 $_SESSION["user"]="";
 $_SESSION["usertype"]="";
 
-// Set the new timezone
+// The script sets the time zone to Asia/Kolkata using
 date_default_timezone_set('Asia/Kolkata');
 $date = date('Y-m-d');
 
-$_SESSION["date"]=$date;
+$_SESSION["date"]=$date;  //he current date is stored in the session
 
 
 
-if($_POST){
+if($_POST){  //The form is processed when submitted
 
     
-
+    //Personal details from the form are stored in the session
     $_SESSION["personal"]=array(
         'fname'=>$_POST['fname'],
         'lname'=>$_POST['lname'],
@@ -41,9 +43,12 @@ if($_POST){
         'dob'=>$_POST['dob']
     );
 
-
+    //function is used to print out the $_SESSION["personal"] array, which contains the form data.
     print_r($_SESSION["personal"]);
+
+    //After saving the data in the session, the user is redirected to the next page 
     header("location: create-account.php");
+    //where they can continue the sign-up process.
 
 
 
