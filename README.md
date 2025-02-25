@@ -80,10 +80,6 @@ If you are Admin,doctor or patient ,only have one page to login :)
 
 
 
-
-
-
-
 DATABASE NAME: 'doctor'
 
 
