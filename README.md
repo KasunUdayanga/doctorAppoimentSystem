@@ -21,7 +21,7 @@ This web project is designed for e-channeling, allowing medical establishments l
 - **View Bookings:** Admin can see the booking details of patients, including session times and doctor assigned.
 
     
-    
+
 ![](https://github.com/KasunUdayanga/doctorAppoimentSystem/blob/main/Screenshots/Admin_dashboard.png)
     
  
