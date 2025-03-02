@@ -25,7 +25,6 @@ This web project is designed for e-channeling, allowing medical establishments l
 ![](https://github.com/KasunUdayanga/doctorAppoimentSystem/blob/main/Screenshots/Admin_dashboard.png)
     
  
- 
 # Doctor Features
 
 ## 1. View Appointments
