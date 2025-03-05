@@ -33,7 +33,6 @@ This web project is designed for e-channeling, allowing medical establishments l
 
 ## 3. View Patient Details
 - **Patient Information:** Doctors can view the detailed profiles of patients they are attending.
-
 ## 4. Delete Account
 - **Account Deletion:** Doctors have the ability to delete their account from the system.
 
